@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Workshop 3</title>
+  <style>
+  span {
+    margin-right: 1.5em;
+  }
+  </style>
+</head>
+<body>
+  <h1>Using fetch to access MTR Next Train API</h1>
+  <label for="line">Choose the MTR line:</label>
+  <select name="line" id="line">
+    <option value="KTL" selected>Kwun Tong Line</option>
+    <option value="TWL">Tsuen Wan Line</option>
+    <option value="ISL">Island Line</option>
+    <option value="TKL">Tseung Kwan O Line</option>
+    <option value="SIL">South Island Line</option>
+    <option value="TCL">Tung Chung LIne</option>
+    <option value="AEL">Airport Express</option>
+    <option value="EAL">East Rail Line</option>
+    <option value="TML">Tuen Ma Line</option>
+  </select>
+  <br><br>
+  <label for="station">Choose the Station:</label>
+  <select name="station" id="station">
+    <option class="KTL" value="WHA" selected>Whampoa</option>
+    <option class="KTL" value="HOM">Ho Man Tin</option>
+    <option class="KTL" value="YMT">Yau Ma Tei</option>
+    <option class="KTL" value="MOK">Mong Kok</option>
+    <option class="KTL" value="PRE">Prince Edward</option>
+    <option class="KTL" value="SKM">Shek Kip Mei</option>
+    <option class="KTL" value="KOT">Kowloon Tong</option>
+    <option class="KTL" value="LOF">Lok Fu</option>
+    <option class="KTL" value="WTS">Wong Tai Sin</option>
+    <option class="KTL" value="DIH">Diamond Hill</option>
+    <option class="KTL" value="CHH">Choi Hung</option>
+    <option class="KTL" value="KOB">Kowloon Bay</option>
+    <option class="KTL" value="NTK">Ngau Tau Kok</option>
+    <option class="KTL" value="KWT">Kwun Tong</option>
+    <option class="KTL" value="LAT">Lam Tin</option>
+    <option class="KTL" value="YAT">Yau Tong</option>
+    <option class="KTL" value="TIK">Tiu Keng Leng</option>
+  </select>
+  <br><br>
+  <button id="bttn">Get Train Data</button>
+  <div id="output" style="margin-top: 1rem"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
